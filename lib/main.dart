@@ -5,9 +5,5 @@ import 'src/app.dart';
 
 // Define 'main' function to run when our app starts
 void main(){
-  // Create a new text widget to show some text on screen
-  var app = 
-
-  // Take that widget and get it on the screen  
-  runApp(app);
+  runApp(App());
 }
