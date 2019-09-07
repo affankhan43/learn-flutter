@@ -1,5 +1,7 @@
 // Import Flutter Helper Library
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' show get;
+import 'dart:convert';
 
 // Create class that will be our custom widget
 // This class must extend the 'StatelessWidget' base class
@@ -12,7 +14,9 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   int counter = 0;
 
-  void fetchImage(){}
+  void fetchImage(){
+    get('http://jsonplaceholder.typicode.com/photos');
+  }
   // Must define a 'build' method that returns
   // the widgets that *this* widget will show
   Widget build(context){
