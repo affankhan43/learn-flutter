@@ -21,7 +21,10 @@ class AppState extends State<App> {
     counter++;
     var response = await get('http://jsonplaceholder.typicode.com/photos/$counter');
     var imageModel = new ImageModel.fromJson(json.decode(response.body));
-    images.add(imageModel);
+    setState(() {
+      images.add(imageModel);
+    });
+    
   }
   // Must define a 'build' method that returns
   // the widgets that *this* widget will show
