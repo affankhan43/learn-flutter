@@ -31,7 +31,7 @@ class AppState extends State<App> {
         appBar: AppBar(
           title: Text('Let\'s see some images!')
           ),
-        body: Text('$counter Images'),
+        body: ImageList(images),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.thumb_up),
           onPressed: fetchImage,
