@@ -19,7 +19,7 @@ class AppState extends State<App> {
         appBar: AppBar(
           title: Text('Let\'s see some images!')
           ),
-        body: Text('$counter'),
+        body: Text('$counter Images'),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.thumb_up),
           onPressed: () {
