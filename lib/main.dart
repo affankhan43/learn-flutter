@@ -11,7 +11,7 @@ void main(){
         title: Text('Let\'s see some images!')
         ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.build),
+        child: Icon(Icons.thumb_up),
         onPressed: () {
           print('Hi There!');
         },
